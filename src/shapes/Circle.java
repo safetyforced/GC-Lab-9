@@ -1,4 +1,4 @@
-package circleStuff;
+package shapes;
 
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
@@ -18,10 +18,10 @@ public class Circle {
 		return radius;
 	}
 
-	public void setRadius(double radius) {
+	public void setRadius(double r) {
 		// sets value of radius 
 		
-		this.radius = radius;
+		radius = r;
 	}
 
 	public double getCircumference() {
@@ -51,7 +51,7 @@ public class Circle {
 	private String formatNumber(double x) {
 		// format value to two decimal points
 		
-		NumberFormat formatter = new DecimalFormat("#.00");
+		NumberFormat formatter = new DecimalFormat("#,###.00");
 		return formatter.format(x);
 
 	}
